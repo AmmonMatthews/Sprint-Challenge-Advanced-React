@@ -1,6 +1,19 @@
+body{
+  /* width: 800px; */
+  background-color:#23207c;
+
+}
+
 .App {
   text-align: center;
 }
+
+h1{
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+
 /* dark-mode */
 .dark-mode {
   color: #fff;
@@ -8,6 +21,14 @@
 }
 
 .dark-mode  .header {
+    background-color: #1F2022;
+    border: none;
+  }
+.dark-mode  .button {
+    background-color: #1F2022;
+    border: 1px solid white;
+  }
+.dark-mode  .player {
     background-color: #1F2022;
     border: none;
   }
@@ -34,9 +55,32 @@
   font-weight: 900;
 }
 
-body{
-  /* width: 800px; */
-  background-color:#23207c;
+.button{
+  background: #00b5ed;
+  width: 10%;
+  padding: .5% 0;
+  border-radius: 5px;
+}
 
+/* Cards */
+.display{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.player{
+  background: #f08c01;
+  border-radius: 5px;
+  width: 10%;
+  margin: .5%;
+}
+
+.player h2{ 
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.player p{
+  font-size: 1.5rem;
 }
 

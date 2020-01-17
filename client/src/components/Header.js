@@ -11,16 +11,16 @@ import useDarkMode from '../hooks/useDarkeMode';
         e.preventDefault();
         setDarkMode(!darkMode)
     }
-    
-    console.log(darkMode);
 
     
 
     return(
         <div className="header" data-testid='header'>
             <h2>Womens World Cup</h2>
-
-            <div onClick={dark} className={darkMode ? "dark " : "light"}> Dark/Light</div>
+            
+            <p onClick={dark} className={darkMode ? "dark button" : "button light"}> Dark/Light</p>
+            
+            
         </div>
     )
 

@@ -26,11 +26,12 @@ class Display extends React.Component{
         return(
             <div>
                 <Header />
+                <h1>Womens World Cup Players</h1>
                 <div className="display">
-                    <h1>Womens World Cup Players</h1>
+                    
                     {this.state.players.map(player => {
                        return( 
-                            <div key={player.id}>
+                            <div className="player" key={player.id}>
                                 <h2>{player.name}</h2>
                                 <p>{player.country}</p>
                                 <p>Searches:{player.searches}</p>
