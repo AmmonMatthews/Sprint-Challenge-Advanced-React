@@ -1,9 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from '@testing-library/react';
 import App from './App';
+import Display from './components/Display';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+test('renders without crashing', () => {
+  render(<App />);
 });
+
+test('Alex Morgan is displaying', () => {
+  const {findByText} = render(<Display/>);
+  findByText('Alex Morgan');
+})
+
+test('Tierna Davidson is displaying', () => {
+  const {findByText} = render(<Display />);
+  findByText(/^tierna davidson$/i);
+})
+
+
+test('Header is showing', () => {
+  const{getByTestId} = render(<App />);
+  getByTestId(/header/i);
+})

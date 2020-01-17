@@ -1,33 +1,86 @@
+body{
+  /* width: 800px; */
+  background-color:#23207c;
+
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  font-size: 3rem;
+  text-decoration: underline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+/* dark-mode */
+.dark-mode {
+  color: #fff;
+  background-color: #313843;
+}
+
+.dark-mode  .header {
+    background-color: #1F2022;
+    border: none;
+  }
+.dark-mode  .button {
+    background-color: #1F2022;
+    border: 1px solid white;
+  }
+.dark-mode  .player {
+    background-color: #1F2022;
+    border: none;
+  }
+
+.dark{
   color: white;
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+/* header */
+.header{
+  display: flex;
+  justify-content: space-around;
+  background-color: #d6000a;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header h2{
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .light{
+  font-size: 1.75rem;
+  font-weight: 900;
 }
+
+.button{
+  background: #00b5ed;
+  width: 10%;
+  padding: .5% 0;
+  border-radius: 5px;
+}
+
+/* Cards */
+.display{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.player{
+  background: #f08c01;
+  border-radius: 5px;
+  width: 10%;
+  margin: .5%;
+}
+
+.player h2{ 
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.player p{
+  font-size: 1.5rem;
+}
+
